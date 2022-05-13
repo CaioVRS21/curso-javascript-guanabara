@@ -14,8 +14,8 @@ body{
     margin: auto;
 }
 
-#interface p{
-    padding-top: 4rem;
+#interface #resultado{
+    padding: 4rem;
     font-size:5em;
 
 }

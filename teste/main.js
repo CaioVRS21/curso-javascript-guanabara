@@ -1,17 +1,19 @@
-var resultado = window.document.getElementById('resultado')
+var resultado = document.getElementById('resultado').value
 var res = 0
 
 function btnLimpar(){
     res = 0
-    resultado.innerHTML = res
+    toString(document.getElementById('resultado').textContent) = res
 }
 
 function btnSomar(){
-    res += 1
-    resultado.innerHTML = res
+    // res = res + calc
+    res++
+    document.getElementById('resultado').textContent = res
 }
 
 function btnSubtrair(){
-    res -= 1
-    resultado.innerHTML = res
+    res--
+    document.getElementById('resultado').textContent = res
 }
+
