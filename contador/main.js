@@ -1,22 +1,32 @@
 
 let res = 0
 
-function btnOk(){
-    let passos = document.getElementById('passos').value
-        // para capturar o valor do input "passos"
-}
 
 function btnLimpar(){
     res = 0
+    passos = ''
     document.getElementById('resultado').textContent = res
+    document.getElementById('passos').value = passos
     // para limpar a tela
 }
 
 function btnSomar(){
     passos = Number.parseInt(document.getElementById('passos').value)
-    passos = undefined ? res+= res : res += passos;
+    // passos == 0 ? res+= res : res += passos;
+    if (document.getElementById('passos').value.lenght == 0){
+
+        passos == undefined ? res++ : res += passos
+        document.getElementById('resultado').textContent = res
+
+    } else if (document.getElementById('passos').value < 1){
+
+    window.alert('Valores menores ou iguais a "0" são inválidos')
+    } else {
+        passos == 0 ? res++ : res += passos
+        document.getElementById('resultado').textContent = res
+    }
     
-    document.getElementById('resultado').textContent = res
+    // document.getElementById('resultado').textContent = res
     }
     // para somar e trazer o valor de "passos"
 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="valor1" id="varX"> 
+    +
+    <input type="number" name="valor2" id="varY">
+    =
+    <span id="resultado">Resultado</span>
+    <br>
+    <button id="somar" onclick="somaNum()">somar</button>
+
+    <script>
+        
+
+        function somaNum(){
+
+            var resultado = document.getElementById("resultado")
+            var a = document.getElementById('varX')
+            var b = document.getElementById('varY')
+            var x = Number(a.value)
+            var y = Number(b.value)
+
+            res = x + y
+
+            resultado.innerHTML = `A soma de ${x} com ${y} é ${res}`
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom</title>
+    <style>
+        .caixa{
+            background-color: rgb(49, 155, 49);
+            color: white;
+
+            width: 20rem;
+            height: 20rem;
+
+            line-height: 20rem;
+            font: 'Arial', sans-serif;
+            text-align: center;
+
+            margin-top: 2rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    <script src="main.js"></script>
+
+    <div class="caixa" id="caixa1" onmouseenter="mudaCor()">
+        onmouseenter
+    </div>
+    <div class="caixa" id="caixa2" onmousemove="mudaCor2()">
+        onmousemove
+    </div>
+    <div class="caixa" id="caixa3" onmousedown="mudaCor3()">
+        onmousemove
+    </div>
+    <div class="caixa" id="caixa4" onmouseup="mudaCor4()">
+        onmouseup
+    </div>
+    <div class="caixa" id="caixa5" onclick="mudaCor5()">
+        onclick
+    </div>
+    <div class="caixa" id="caixa6" onmouseout="mudaCor6()">
+        onmouseout
+    </div>
+</body>
+</html>
