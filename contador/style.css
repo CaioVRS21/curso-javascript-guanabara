@@ -1,0 +1,44 @@
+@charset "UTF-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+#titulo{
+    font-size: 5rem;
+}
+
+#interface{
+    color: black;
+    background-color: white;
+
+    width: 500px;
+    margin: auto;
+
+    border-radius:2rem;
+    border: 1px solid black;
+}
+
+#interface #legenda1{
+    font-size: 1.25rem;
+}
+
+#interface #resultado{
+    padding: 4rem;
+    font-size:5rem;
+
+}
+
+.botoes{
+    padding: 2rem;
+}
+
+.botao{
+    width: 7rem;
+    
+    font-size:1.5rem;
+}

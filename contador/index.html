@@ -10,22 +10,18 @@
 <body>
     <script src="main.js"></script>
     <header>
-        <h1>Contador</h1>
+        <h1 id="titulo">Contador</h1>
     </header>
 
     <div id="interface">
+        <p id="legenda1">Em quantos passos você gostaria de realizar essa contagem?</p> <br>
+        <input type="text" id="passos"><button onclick="btnOk()">ok</button>
         <div id="resultado">0</div>
-        <button onclick="btnLimpar()">Limpar</button>
-        <button onclick="btnSomar()">Somar</button>
-        <button onclick="btnSubtrair()">subtrair</button>
-        <select name="passo" id="passos">
-            <optgroup>
-                <option value="1" selected>1</option>
-                <option value="2">2</option>
-                <option value="5">5</option>
-                <option value="10">10</option>
-            </optgroup>
-        </select>
+        <div class="botoes">
+            <button class="botao" onclick="btnLimpar()">Limpar</button>
+            <button class="botao" onclick="btnSomar()">Somar</button>
+            <button class="botao" onclick="btnSubtrair()">Subtrair</button>
+        </div>
     </div>
     <h2>Criado por Guilherme Guelfi e replicado por Caio Veras</h2>
 </body>
